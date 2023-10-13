@@ -1,0 +1,10 @@
+{
+  "presets": ["@nx/next/babel"],
+  "plugins": [
+    [
+      "react-native-web",
+      {}
+    ],
+    "nativewind/babel"
+  ]
+}

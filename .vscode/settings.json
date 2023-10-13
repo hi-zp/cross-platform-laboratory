@@ -1,0 +1,14 @@
+// https://github.com/marklawlor/nativewind/issues/328
+
+{
+  "tailwindCSS.experimental.classRegex": [
+    [
+			"styled\\(.+,([^)]*)\\)",
+			"[\"'`]([^\"'`]*).*?[\"'`]"
+		],
+		[
+			"styled\\(.+, .+,([^)]*)\\)",
+			"[\"'`]([^\"'`]*).*?[\"'`]"
+		]
+  ]
+}

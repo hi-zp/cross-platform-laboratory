@@ -1,0 +1,22 @@
+{
+  "name": "react-native",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "adb": "adb reverse tcp:8081 tcp:8081"
+  },
+  "dependencies": {
+    "@testing-library/jest-native": "*",
+    "@testing-library/react-native": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-svg": "*",
+    "metro-config": "*",
+    "nativewind": "*",
+    "@nx/react": "*",
+    "tailwindcss": "*"
+  },
+  "devDependencies": {
+    "tailwindcss": "*"
+  }
+}
