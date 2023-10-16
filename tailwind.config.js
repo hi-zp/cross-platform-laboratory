@@ -298,4 +298,5 @@ module.exports = {
     // transitionDuration: false,
     transitionDelay: false,
   },
+  important: 'html',
 };
