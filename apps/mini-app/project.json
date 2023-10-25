@@ -1,0 +1,39 @@
+{
+  "name": "mini-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mini-app/src",
+  "projectType": "application",
+  "targets": {
+    "build:weapp": {
+      "executor": "@cross-platform-laboratory/plugins/taro:build",
+      "defaultConfiguration": "production",
+      "options": {
+        "rootDir": "./",
+        "appDir": "apps/mini-app",
+        "type": "weapp"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/mini-app/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/mini-app/jest.config.ts",
+        "passWithNoTests": true
+      },
+      "configurations": {
+        "ci": {
+          "ci": true,
+          "codeCoverage": true
+        }
+      }
+    }
+  },
+  "tags": []
+}

@@ -16,7 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "@cross-platform-laboratory/containers": ["libs/containers/src/index.ts"],
-      "@cross-platform-laboratory/elements": ["libs/elements/src/index.ts"]
+      "@cross-platform-laboratory/elements": ["libs/elements/src/index.ts"],
+      "@cross-platform-laboratory/plugins/taro": [
+        "libs/plugins/taro/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
