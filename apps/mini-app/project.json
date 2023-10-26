@@ -4,13 +4,11 @@
   "sourceRoot": "apps/mini-app/src",
   "projectType": "application",
   "targets": {
-    "build:weapp": {
+    "dev:weapp": {
       "executor": "@cross-platform-laboratory/plugins/taro:build",
-      "defaultConfiguration": "production",
       "options": {
-        "rootDir": "./",
-        "appDir": "apps/mini-app",
-        "type": "weapp"
+        "type": "weapp",
+        "watch": true
       }
     },
     "lint": {

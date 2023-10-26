@@ -112,5 +112,5 @@ yarn-error.log
 
 apps/react-native-e2e/artifacts
 
-# taro
-# apps/*/.swc
+.nx/
+.swc/
