@@ -13,8 +13,7 @@
     "react-native-svg": "*",
     "metro-config": "*",
     "nativewind": "*",
-    "@nx/react": "*",
-    "tailwindcss": "*"
+    "@nx/react": "*"
   },
   "devDependencies": {
     "tailwindcss": "*"
