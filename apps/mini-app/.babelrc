@@ -1,0 +1,12 @@
+{
+  "presets": [
+    "@nrwl/js/babel",
+    ["taro", {
+      "framework": "react",
+      "ts": true
+    }]
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-private-methods", { "loose": false }]
+  ]
+}
