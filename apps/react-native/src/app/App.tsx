@@ -1,10 +1,7 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
 import { WelcomePage } from '@cross-platform-laboratory/containers';
 import React from 'react';
-import {
-  StatusBar,
-  Text as RNText
-} from 'react-native';
+import { StatusBar } from 'react-native';
 
 export const App = () => {
   return (
